@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light Sky Blue */
+            color: #444; /* Dark Gray */
+        }
+
+        h1, h2, h3 {
+            color: #2d3e50; /* Midnight Blue */
+        }
+
+        .landing-page {
+            background-image: url('path/to/your-background-image.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .intro-text {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .intro-text img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .intro-text h1,
+        .intro-text p {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .intro-text.animate-in h1,
+        .intro-text.animate-in p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            background-color: #2ecc71; /* Emerald Green */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #27ae60; /* Darker Green */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer img {
+            width: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Enrico Luis S. Jose - Portfolio</title>
+</head>
+<body>
+
+
+    <header class="landing-page">
+        <div class="container">
+            <div class="intro-text">
+                <img src="C:\Users\User\Downloads\me.jpg" alt="Enrico Luis S. Jose" width="150">
+                <h1>Enrico Luis S. Jose</h1>
+                <p style="color: #222;">Bachelor of Science in Information Technology with Specialization in Web and Mobile Applications<br>1st year College student at FEU ALABANG</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Enrico Luis S. Jose, a 1st-year college student pursuing a Bachelor of Science in Information Technology with Specialization in Web and Mobile Applications at FEU ALABANG.</p>
+            <p>I am enthusiastic about exploring the vast world of technology and applying my skills to create meaningful and innovative solutions. My journey into the realm of Information Technology started with a fascination for the endless possibilities it offers.</p>
+            <p>Outside the world of coding, I enjoy collaborating with peers, attending tech meetups, and staying updated on the latest industry trends. I am driven by a desire to contribute to the ever-evolving field of technology and make a positive impact through my work.</p>
+            <a href="https://linkedin.com/in/enricoluissjose" class="btn" target="_blank">LinkedIn</a>
+            <a href="https://github.com/enricoluissjose" class="btn" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <p>Email: enricojose550@gmail.com</p>
+            <p>Phone: 09478602949</p>
+        </div>
+    </section>
+
+   
+    <footer>
+        <a href="https://facebook.com" target="_blank"><img src="C:\Users\User\Downloads\fb" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="C:\Users\User\Downloads\ig.jpg" alt="Instagram"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="C:\Users\User\Downloads\tiktok.jpg" alt="TikTok"></a>
+        <a href="https://youtube.com" target="_blank"><img src="C:\Users\User\Downloads\yt.png" alt="YouTube"></a>
+    </footer>
+
+    <script src="path/to/bootstrap.bundle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+         
+            setTimeout(function () {
+                document.querySelector('.intro-text').classList.add('animate-in');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
